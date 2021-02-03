@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import path, { join } from "path";
+import path from "path";
 import fs from "fs";
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 const app = express();
 if (process.env.NODE_ENV !== "production") {
