@@ -10,7 +10,7 @@ const app = express();
 
 console.log("process.env.NODE_ENV", process.env.NODE_ENV);
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV !== "production") {
   console.log("Using cors");
   app.use(cors());
 }
