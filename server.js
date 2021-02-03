@@ -7,7 +7,10 @@ import fs from "fs";
 const port = process.env.PORT || 5000;
 
 const app = express();
-if (process.env.NODE_ENV !== "production") {
+
+console.log("process.env.NODE_ENV", process.env.NODE_ENV);
+
+if (process.env.NODE_ENV === "production") {
   console.log("Using cors");
   app.use(cors());
 }

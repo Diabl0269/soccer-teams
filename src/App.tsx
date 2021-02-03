@@ -24,7 +24,7 @@ const itemsPerPage = 6;
 const url = `${
   process.env.NODE_ENV === "production" ? "" : "http://localhost:5000"
 }/teams`;
-console.log("url", url);
+
 interface Team {
   name: string;
   founded: number;
